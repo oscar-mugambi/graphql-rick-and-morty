@@ -1,8 +1,22 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.character {
+  display: flex;
+}
+
+.character-content {
+  margin-left: 2rem;
+}
+
+.cahracter-episode {
+  margin-top: 2rem;
 }
