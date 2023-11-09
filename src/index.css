@@ -9,3 +9,38 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+/* For Webkit browsers */
+::-webkit-scrollbar {
+  width: 12px; /* Scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1); /* Light track color with transparency */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(89, 85, 117, 0.8); /* Purple thumb color */
+  border-radius: 10px;
+  border: 3px solid rgba(255, 255, 255, 0.1); /* Light border for thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(108, 92, 231, 1); /* Slightly darker purple on hover */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* 'auto' or 'thin' */
+  scrollbar-color: rgba(66, 65, 75, 0.8) rgba(255, 255, 255, 0.1); /* thumb and track color */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
