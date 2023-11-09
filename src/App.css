@@ -43,36 +43,35 @@
 .character-list a {
   text-decoration: none;
   color: inherit;
-  border: 1px solid transparent; /* For a subtle border effect on hover */
+  border: 1px solid transparent;
   border-radius: 0.5rem;
-  overflow: hidden; /* Ensures the image doesn't overflow the border radius */
-  background-color: #f9f9f9; /* Light background for each character card */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  overflow: hidden;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .character-list a:hover,
 .character-list a:focus {
-  /* Hover and focus for keyboard navigation */
-  transform: translateY(-5px); /* Slight lift effect */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-  border-color: #007bff; /* Highlight border color */
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-color: #007bff;
 }
 
 .character-list img {
   width: 100%;
   height: auto;
-  display: block; /* Remove any extra space below the image */
-  transition: transform 0.2s ease; /* Smooth transition for scaling */
+  display: block;
+  transition: transform 0.2s ease;
 }
 
 .character-list img:hover,
 .character-list img:focus {
-  transform: scale(1.05); /* Slightly enlarge the image */
+  transform: scale(1.05);
 }
 
 .character-list h2 {
   margin: 0.5rem;
   text-align: center;
-  font-size: 1rem; /* Adjust font size as needed */
+  font-size: 1rem;
 }

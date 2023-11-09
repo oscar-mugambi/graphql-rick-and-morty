@@ -2,12 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import useCharacters from '../hooks/useCharacters';
 import LoadingSpinner from '../components/LoadingSpinner';
+import ErrorState from '../components/ErrorComponent';
 
 export default function CharactersList() {
   const { error, loading, data } = useCharacters();
 
   if (loading) return <LoadingSpinner />;
-  if (error) return <div>An error occurred</div>;
+  if (error) return <ErrorState errorMessage={error.message} />;
 
   return (
     <>

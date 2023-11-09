@@ -12,8 +12,8 @@ const LoadingSpinner = () => {
     >
       <div
         style={{
-          border: '6px solid #f3f3f3', // Light grey border for the spinner
-          borderTop: '6px solid #3498db', // Blue color for the spinner
+          border: '6px solid #f3f3f3',
+          borderTop: '6px solid #3498db',
           borderRadius: '50%',
           width: '50px',
           height: '50px',

@@ -1,8 +1,9 @@
+import React from 'react';
 import CharactersList from './pages/CharactersList';
-import './App.css';
 import { Routes, Route } from 'react-router';
 import Character from './pages/Character';
 import Search from './pages/Search';
+import './App.css';
 
 function App() {
   return (

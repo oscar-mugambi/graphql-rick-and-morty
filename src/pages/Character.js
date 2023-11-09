@@ -4,6 +4,8 @@ import useCharacter from '../hooks/useCharacter';
 import LoadingSpinner from '../components/LoadingSpinner';
 import ErrorState from '../components/ErrorComponent';
 
+const paragraphStyle = { margin: '0.25em 0', fontSize: '1.25em' };
+
 export default function Character() {
   const { id } = useParams();
   const { error, loading, data } = useCharacter(id);
@@ -52,16 +54,16 @@ export default function Character() {
           <h1 style={{ marginBottom: '0.5em', color: '#333', fontSize: '2em' }}>
             {data.character.name}
           </h1>
-          <p style={{ margin: '0.25em 0', fontSize: '1.25em' }}>
+          <p style={paragraphStyle}>
             <strong>Status:</strong> {data.character.status}
           </p>
-          <p style={{ margin: '0.25em 0', fontSize: '1.25em' }}>
+          <p style={paragraphStyle}>
             <strong>Species:</strong> {data.character.species}
           </p>
-          <p style={{ margin: '0.25em 0', fontSize: '1.25em' }}>
+          <p style={paragraphStyle}>
             <strong>Gender:</strong> {data.character.gender}
           </p>
-          <p style={{ margin: '0.25em 0', fontSize: '1.25em' }}>
+          <p style={paragraphStyle}>
             <strong>Location:</strong> {data.character.location.name}
           </p>
         </div>
